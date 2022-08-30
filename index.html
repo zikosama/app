@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>zakaria samady</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Hind', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1f1f1f;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+text-decoration: none;
+color: rgb(255, 0, 55);
+text-transform: uppercase;
+font-weight: 700;
+font-size: 1.8em;
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(255, 0, 55);
+font-size: 1.1em;
+font-weight: 500;
+padding-left: 15px;
+padding-right: 15px;
+text-align: center;
+padding-top: 100%;
+padding-bottom: 20px;
+width: 100%;
+text-align: center;
+}
+
+.navigation a:hover{
+    color: #ffffff;
+    background-color: rgb(255, 0, 85);
+    transition: 1s ease;
+}
+
+
+section{
+padding: 100px 200px;
+
+}
+.main {
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+background: url(images/background.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+}
+
+.main h2 {
+color: rgb(255, 0, 55);
+font-size: 1,4em;
+font-weight: 500;
+
+}
+
+.main h2 span {
+color: rgb(255, 255, 255);
+margin-top: 10px;
+font-size: 3em;
+font-weight: 500;
+}
+
+.main h3 {
+color: rgb(243 102 133);
+font-size: 2em;
+font-weight: 700;
+letter-spacing: 1px;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+
+.main-btn {
+color: #ffffff;
+background-color: rgb(255, 0, 55);
+text-decoration: none;
+font-size: 1,1em;
+font-weight: 600;
+display: inline-block;
+padding: 0.9375em 2.1875em;
+letter-spacing: 1px;
+border-radius: 15px;
+margin-bottom: 40px;
+transition: 1s ease;
+}
+
+.main-btn:hover {
+    background-color: rgb(223, 0, 48);
+    transform: scale(1.1);
+}
+
+.social-icons a {
+color: #ffffff;
+font-size: 1.7em;
+padding-right: 35px;
+
+}
+
+.title {
+    display: flex;
+justify-content: center;
+color: rgb(255, 0, 55);
+font-size: 2,2em;
+font-weight: 1000;
+margin-bottom: 30px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1f1f1f;
+    width: 21.25em;
+    box-shadow: 0 5px 25px #464545;
+border-radius: 10px;
+padding: 25px;
+margin: 15px;
+transition: 1s ease;
+}
+
+.card:hover {
+transform: scale(1.1);
+
+}
+.icon {
+    color: rgb(255, 0, 55);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info h3 {
+    color: rgb(243 102 133);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+
+}
+.info p {
+    text-align: center;
+color: #ffffff;
+}
+
+.projects {
+background-color: #1f1f1f;
+}
+.projects .content{
+margin-top: 30px;
+}
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+min-height: 14em;
+width: 23em;
+overflow: hidden;
+border-radius: 10px;
+margin: 20px;
+transition: 0.7s ease;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+.project-image img{
+width: 100%;
+}
+.project-info {
+    padding: 1em;
+}
+.project-category {
+    font-size: 0.8em;
+    color: #1f1f1f;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+font-weight: 800;
+margin-top: 10px;
+}
+.more-details {
+ text-decoration: none;
+    color: rgb(255, 0, 55);
+}
+.more-details:hover {
+    color: rgb(252, 81, 118);
+}
+.contact .icon {
+font-size: 4.5em;
+}
+
+.contact .info {
+color: #1f1f1f;
+
+}
+
+.contact .info .p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #1f1f1f;
+    color: aliceblue;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title span{
+color: rgb(255, 0, 55);
+}
+
+@media (max-width:1023px){
+header{
+    padding: 12px 20px;
+}
+.navigation a{
+    padding-left: 10px;
+}
+.title{
+    font-size: 1.8em;
+}
+section{
+    padding: 80px 20px;
+}
+.main-content h2{
+    font-size: 1em;}
+.main-content h3{
+    font-size: 1.6em;
+}
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media (max-width:641px){
+   body{
+    font-size: 12px;
+   }
+    .main-content h2{
+        font-size: 0.8em;}
+    .main-content h3{
+        font-size: 1em;
+    
+    }
+    }
+    @media (max-width:300px){
+        body{
+         font-size: 10px;
+        }
+         }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+<header>
+<a href="#" class="logo">ZAKARIA</a>
+<nav class="navigation">
+    <a href="#services">services</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+
+</nav>
+
+</header>
+<section class="main">
+<div>
+    <h2>hello, I am ZAKARIA <br><span>Developer and Editor</span></h2>
+<h3 class="hst">Developer,editor,marketed,designer... </h3>
+<a href="#projects" class="main-btn">view my works</a>
+<div class="social-icons">
+<a href="https://www.instagram.com/zkr_samadi/"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://twitter.com/SZakasama"><i class="fa-brands fa-twitter"></i></a>
+<a href="https://www.youtube.com/channel/UCUN5J6vczCiZRTtl270EqVg"><i class="fa-brands fa-youtube"></i></a>
+<a href="https://www.facebook.com/zakaria.samadi.520"><i class="fa-brands fa-facebook"></i></a>
+</div>
+</div>
+</section>
+
+<section class="cards" id="services">
+<h2 class="title">Services</h2>
+<div class="content">
+    <div class="card">
+<div class="icon">
+    <i class="fa-brands fa-weebly"></i></div>
+<div class="info">
+    <h3>create a website</h3>
+    <p>with this service you can create your website as you like (personal,store online,blog,...) Of course, with the adoption of your own taste and the colors of your brand.</p>
+</div>
+</div>
+<div class="content">
+    <div class="card">
+<div class="icon">
+    <i class="fa-brands fa-adversal"></i>
+</div>
+<div class="info">
+    <h3>create a ads compaign</h3>
+<p>with this sevice Our team can develope your sells more than 30%,we adabted all Advertising campaign components (copywriter,data analyse,budget,targeting,...).</p>
+</div>
+</div>
+<div class="content">
+    <div class="card">
+<div class="icon">
+    <i class="fa-solid fa-video"></i>
+</div>
+<div class="info">
+    <h3>create a video</h3>
+<p>with this sevice you can create a video in the different categories for example:(youtube,advetising,intro,...) of course We take care of writing a script ,professional audio commentary,minature.</p>
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="projects" id="projects">
+<h2 class="title">projects</h2>
+
+<div class="content"><div class="project-card">
+    <div class="project-image">
+        <img src="images/de-jong.PNG">
+        <div class="project-info">
+            <p class="project-category">frenkie de jong 2021</p>
+            <strong class="project-title">
+                <span>video youtube</span>
+                <a href="https://youtu.be/EH90yDHMwNA" class="more-details">more-details</a>
+            </strong>
+        </div>
+    </div>
+
+    </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/gavi.PNG">
+            <div class="project-info">
+                <p class="project-category">pablo gavi 2022</p>
+                <strong class="project-title">
+                    <span>video youtube</span>
+                    <a href="https://youtu.be/lENo3vT3odo" class="more-details">more-details</a>
+                </strong>
+            </div>
+        </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/psgvsfcb.PNG">
+                <div class="project-info">
+                    <p class="project-category">Remontada FCB PSG</p>
+                    <strong class="project-title">
+                        <span>video youtube</span>
+                        <a href="https://youtu.be/C8xMIFB-UIs" class="more-details">more-details</a>
+                    </strong>
+                </div>
+            </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/smart-watch.PNG">
+                    <div class="project-info">
+                        <p class="project-category">smart-watch</p>
+                        <strong class="project-title">
+                            <span>product video</span>
+                            <a href="https://youtu.be/QXUhJ7b4D9k" class="more-details">more-details</a>
+                        </strong>
+                    </div>
+                </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/dragon ball.PNG">
+                        <div class="project-info">
+                            <p class="project-category">t-shirt dragon ball</p>
+                            <strong class="project-title">
+                                <span>product video</span>
+                                <a href="https://www.youtube.com/watch?v=cSccNHqAMCA" class="more-details">more-details</a>
+                            </strong>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Untitled-1.jpg">
+                            <div class="project-info">
+                                <p class="project-category">Black Star store</p>
+                                <strong class="project-title">
+                                    <span>website</span>
+                                    <a href="https://blkstar.shop/" class="more-details">more-details</a>
+                                </strong>
+                            </div>
+                        </div>
+                        </div>
+                                </div>
+</div>
+</div>
+
+</section>
+
+<section class="cards contact" id="contact">
+<h2 class="title">Let's Work Together</h2>
+<div class="content">
+    <div class="card">
+<div class="icon">
+    <i class="fa-solid fa-phone"></i>
+</div>
+<div class="info">
+    <h3>phone</h3>
+    <p>+212677746180</p>
+</div>
+</div>
+<div class="content">
+    <div class="card">
+<div class="icon">
+    <i class="fa-solid fa-at"></i>
+</div>
+<div class="info">
+    <h3>Email</h3>
+<p>zakasama23@gmail.com</p>
+</div>
+</div>
+<div class="content">
+    <div class="card">
+<div class="icon">
+    <i class="fa-brands fa-whatsapp"></i>
+</div>
+<div class="info">
+    <h3>whatsapp</h3>
+<p>+212699368751</p>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+    <p class="footer-title">Copyrights @<span>ZAKARIA SAMADI</span>
+    </p>
+<div class="social-icons">
+<a href="https://www.instagram.com/zkr_samadi/"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://twitter.com/SZakasama"><i class="fa-brands fa-twitter"></i></a>
+<a href="https://www.youtube.com/channel/UCUN5J6vczCiZRTtl270EqVg"><i class="fa-brands fa-youtube"></i></a>
+<a href="https://www.facebook.com/zakaria.samadi.520"><i class="fa-brands fa-facebook"></i></a>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
